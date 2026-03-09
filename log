@@ -1,0 +1,44 @@
+{
+  "name": "tentacool",
+  "url": "https://pokeapi.co/api/v2/pokemon/72/"
+}
+{
+  "name": "tentacruel",
+  "url": "https://pokeapi.co/api/v2/pokemon/73/"
+}
+{
+  "name": "staryu",
+  "url": "https://pokeapi.co/api/v2/pokemon/120/"
+}
+{
+  "name": "magikarp",
+  "url": "https://pokeapi.co/api/v2/pokemon/129/"
+}
+{
+  "name": "gyarados",
+  "url": "https://pokeapi.co/api/v2/pokemon/130/"
+}
+{
+  "name": "wingull",
+  "url": "https://pokeapi.co/api/v2/pokemon/278/"
+}
+{
+  "name": "pelipper",
+  "url": "https://pokeapi.co/api/v2/pokemon/279/"
+}
+{
+  "name": "shellos",
+  "url": "https://pokeapi.co/api/v2/pokemon/422/"
+}
+{
+  "name": "gastrodon",
+  "url": "https://pokeapi.co/api/v2/pokemon/423/"
+}
+{
+  "name": "finneon",
+  "url": "https://pokeapi.co/api/v2/pokemon/456/"
+}
+{
+  "name": "lumineon",
+  "url": "https://pokeapi.co/api/v2/pokemon/457/"
+}
