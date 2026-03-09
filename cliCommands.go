@@ -18,10 +18,11 @@ type CliCommands struct {
 }
 
 type config struct {
-	nextUrl *string
-	prevUrl *string
-	cache   *pokecache.Cache
-	option  *string
+	nextUrl  *string
+	prevUrl  *string
+	cache    *pokecache.Cache
+	option   *string
+	commands map[string]CliCommands
 }
 
 type Pokemon struct {
@@ -85,7 +86,14 @@ func Exit(cnf *config, pokedex map[string]Pokemon) error {
 	return nil
 }
 func Help(cnf *config, pokedex map[string]Pokemon) error {
-	fmt.Println("\tWelcome to the Pokedex! Usage: Help: Displays a Help message Exit: Exit the Pokedex")
+	fmt.Println("Welcome to the Pokedex! Usage: Help: Displays a Help message Exit: Exit the Pokedex")
+	fmt.Println("Commands:")
+
+	cmds := cnf.commands
+	for _, command := range cmds {
+		fmt.Printf(" \033[1;31m%s\033[0m - %s\n", command.name, command.description)
+	}
+
 	return nil
 }
 
@@ -344,7 +352,7 @@ func Pokedex(conf *config, pokedex map[string]Pokemon) error {
 		fmt.Println("You don't have pokemons")
 		return errors.New("no pokemons")
 	}
-	for key, _ := range pokedex {
+	for key := range pokedex {
 		fmt.Printf("  - %s\n", key)
 	}
 

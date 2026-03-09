@@ -61,10 +61,13 @@ func main() {
 	}
 
 	conf := &config{
-		prevUrl: nil,
-		nextUrl: nil,
-		cache:   cache,
+		prevUrl:  nil,
+		nextUrl:  nil,
+		cache:    cache,
+		commands: commands,
 	}
+
+	fmt.Println("Welcome to Pokedex! Type help to start")
 
 	// game loop
 	for {
